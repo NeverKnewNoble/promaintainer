@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-19 09:06:31.607610",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "info_section",
+  "request_raised_by",
+  "column_break_fwsy",
+  "date",
+  "column_break_tvmx",
+  "urgency",
+  "request_info_section",
+  "office_location",
+  "column_break_ipaq",
+  "maintenace_type",
+  "section_break_aqwc",
+  "description",
+  "upload_image_optional",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "info_section",
+   "fieldtype": "Section Break",
+   "label": "User Info"
+  },
+  {
+   "fieldname": "request_raised_by",
+   "fieldtype": "Data",
+   "label": "Request Raised by"
+  },
+  {
+   "fieldname": "column_break_fwsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date & Time"
+  },
+  {
+   "fieldname": "column_break_tvmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "urgency",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Urgency",
+   "options": "\nLow\nMedium\nHigh\nUrgent"
+  },
+  {
+   "fieldname": "request_info_section",
+   "fieldtype": "Section Break",
+   "label": "Request Info"
+  },
+  {
+   "fieldname": "office_location",
+   "fieldtype": "Link",
+   "label": "Office (Location)",
+   "options": "Office Location"
+  },
+  {
+   "fieldname": "column_break_ipaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maintenace_type",
+   "fieldtype": "Select",
+   "label": "Maintenace Type",
+   "options": "\nPlumbing\nHeating And Cooling\nAppliance\nGrounds Keeping\nIT & Technology\nJanitorial\nSafety & Security\nElectricals"
+  },
+  {
+   "fieldname": "section_break_aqwc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "upload_image_optional",
+   "fieldtype": "Attach Image",
+   "label": "Upload Image (Optional)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Request Maintenance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-19 17:21:46.400740",
+ "modified_by": "Administrator",
+ "module": "ProMaintainer",
+ "name": "Request Maintenance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
